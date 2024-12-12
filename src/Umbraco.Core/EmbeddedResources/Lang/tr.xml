@@ -9,6 +9,7 @@
     <key alias="auditTrail">Denetim Yolu</key>
     <key alias="browse">Düğüme Göz At</key>
     <key alias="changeDocType">Belge Türünü Değiştir</key>
+    <key alias="changeDataType">Veri Türünü Değiştir</key>
     <key alias="copy">Kopyala</key>
     <key alias="create">Oluştur</key>
     <key alias="export">Dışa Aktar</key>
@@ -16,6 +17,7 @@
     <key alias="createGroup">Grup oluştur</key>
     <key alias="delete">Sil</key>
     <key alias="disable">Devre Dışı Bırak</key>
+    <key alias="editContent">İçeriği düzenle</key>
     <key alias="editSettings">Ayarları düzenle</key>
     <key alias="emptyrecyclebin">Geri dönüşüm kutusunu boşalt</key>
     <key alias="enable">Etkinleştir</key>
@@ -36,6 +38,7 @@
     <key alias="restore" version="7.3.0">Geri Yükle</key>
     <key alias="chooseWhereToCopy">Nereye kopyalayacağınızı seçin</key>
     <key alias="chooseWhereToMove">Taşıyacağınız yeri seçin</key>
+    <key alias="chooseWhereToImport">Nereden içe aktaracağınızı seçin</key>
     <key alias="toInTheTreeStructureBelow">aşağıdaki ağaç yapısına</key>
     <key alias="infiniteEditorChooseWhereToCopy">Seçili öğelerin nereye kopyalanacağını seçin</key>
     <key alias="infiniteEditorChooseWhereToMove">Seçili öğelerin nereye taşınacağını seçin</key>
@@ -50,10 +53,11 @@
     <key alias="sort">Sırala</key>
     <key alias="translate">Çevir</key>
     <key alias="update">Güncelle</key>
-    <key alias="setPermissions">İzinleri ayarlayın</key>
+    <key alias="setPermissions">İzinleri ayarla</key>
     <key alias="unlock">Kilidi Aç</key>
-    <key alias="createblueprint">İçerik Şablonu Oluşturun</key>
+    <key alias="createblueprint">İçerik Şablonu Oluştur</key>
     <key alias="resendInvite">Daveti Yeniden Gönder</key>
+    <key alias="toggleHideUnavailable">Kullanılamayan seçenekleri gizle</key>
   </area>
   <area alias="content">
     <key alias="itemNotPublished">Bu öğe yayınlanmadı</key>
@@ -61,12 +65,19 @@
     <key alias="parentCultureNotPublished">Bu kültür yayınlandı, ancak '%0%' üst öğe üzerinde yayınlanmadığı için görünmüyor</key>
     <key alias="parentNotPublishedAnomaly">Bu belge yayınlandı, ancak önbellekte yok</key>
     <key alias="getUrlException">URL alınamadı</key>
-    <key alias="routeError">Bu belge yayınlandı, ancak url'si %0% içeriğiyle çakışacak</key>
-    <key alias="routeErrorCannotRoute">Bu belge yayınlandı, ancak url'si yönlendirilemez</key>
+    <key alias="routeError">Bu belge yayınlandı, ancak URL'si %0% içeriğiyle çakışacak</key>
+    <key alias="routeErrorCannotRoute">Bu belge yayınlandı, ancak URL'si yönlendirilemez</key>
   </area>
   <area alias="member">
+    <key alias="duplicateMemberLogin">Bu oturuma sahip olan başka bir üye var</key>
+    <key alias="memberHasGroup">Üye zaten '%0%' grubunda</key>
+    <key alias="memberHasPassword">Üyenin şifresi zaten belirlendi</key>
+    <key alias="memberLockoutNotEnabled">Bu üye için kilitleme devre dışı</key>
+    <key alias="memberNotInGroup">Üye '%0%' grubunda değil</key>
   </area>
   <area alias="errors">
+    <key alias="defaultError">Bilinmeyen bir hata oluştu</key>
+    <key alias="concurrencyError">İyimser eşzamanlılık hatası, nesne değiştirildi</key>
   </area>
   <area alias="login">
     <key alias="resetCodeExpired">Tıkladığınız bağlantı geçersiz veya süresi dolmuş</key>
@@ -161,7 +172,7 @@
       gerçekleştirildiğini bildiren
       otomatik bir e-postadır.
 
-      Düzenleme yapmak için http://%4%/#/content/content/edit/%5% adresine gidiniz.
+      Düzenleme yapmak için http://%4%/#/content/content/edit/%5% adresine gidin.
 
       %6%
 
@@ -210,7 +221,7 @@
 															Merhaba %0%,
 														</h1>
                                                         <p style='color: #392F54; font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0 0 15px;'>
-                                                            Bu, <strong>'%1%'</strong> görevinin <a style="color: #392F54; text-decoration: none; -ms-word-break: break-all; word-break: break-all;" href="http://%4%/#/content/content/edit/%5%"><strong>'%2%'</strong></a> sayfasında <strong>'%3%'</strong> kullanıcısı tarafından gerçekleştirildiğini size bildirmek için otomatik bir postadır.
+                                                            Bu, <strong>'%1%'</strong> görevinin <a style="color: #392F54; text-decoration: none; -ms-word-break: break-all; word-break: break-all;" href="http://%4%/#/content/content/edit/%5%"><strong>'%2%'</strong></a> sayfasında <strong>'%3%'</strong> kullanıcısı tarafından gerçekleştirildiğini size bildirmek için gönderilen otomatik bir postadır.
 														</p>
 														<table border='0' cellpadding='0' cellspacing='0' class='btn btn-primary' style='border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; box-sizing: border-box;'>
 															<tbody>
@@ -228,7 +239,7 @@
 															%6%
 														</p>
 														<p style='color: #392F54; font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0 0 15px;'>
-															İyi günler dilerim!<br /><br />
+															İyi günler!<br /><br />
 															Umbraco robotundan teşekkürler
 														</p>
 													</td>
@@ -249,10 +260,21 @@
     <key alias="mailBodyVariantHtmlSummary"><![CDATA[<p> Aşağıdaki diller değiştirildi: </p>
        %0%
     ]]></key>
-    <key alias="mailSubject">[ %0%]%1% ile ilgili bildirim%2% üzerinde gerçekleştirildi</key>
+    <key alias="mailSubject">[%0%] %1% ile ilgili bildirim %2% üzerinde gerçekleştirildi</key>
   </area>
   <area alias="user">
+    <key alias="duplicateLogin">Bu oturuma sahip olan başka bir kullanıcı var</key>
     <key alias="passwordMismatch">Onaylanan şifre yeni şifreyle eşleşmiyor!</key>
+    <key alias="passwordRequiresDigit">Şifre en az bir rakam içermeli ('0'-'9')</key>
+    <key alias="passwordRequiresLower">Şifre en az bir küçük harf içermeli ('a'-'z')</key>
+    <key alias="passwordRequiresNonAlphanumeric">Şifre en az bir alfanümerik olmayan karakter içermeli</key>
+    <key alias="passwordRequiresUniqueChars">Şifre en az %0% farklı karakterden oluşmalı</key>
+    <key alias="passwordRequiresUpper">Şifre en az bir büyük harf içermeli ('A'-'Z')</key>
+    <key alias="passwordTooShort">Şifre en az %0% karakter uzunluğunda olmalı</key>
+    <key alias="userHasPassword">Kullanıcının şifresi zaten belirlendi</key>
+    <key alias="userHasGroup">Kullanıcı zaten '%0%' grubunda</key>
+    <key alias="userLockoutNotEnabled">Bu kullanıcı için kilitleme devre dışı</key>
+    <key alias="userNotInGroup">Kullanıcı '%0%' grubunda değil</key>
     <key alias="inviteEmailCopySubject">Umbraco: Davet</key>
     <key alias="inviteEmailCopyFormat"><![CDATA[
     <html>
@@ -310,7 +332,7 @@
                                                                         <tr>
                                                                             <td style='font-family: sans-serif; font-size: 14px; vertical-align: top; border-radius: 5px; text-align: center; background: #35C786;' align='center' bgcolor='#35C786' valign='top'>
                                                                                 <a href='%3%' target='_blank' rel='noopener' style='color: #FFFFFF; text-decoration: none; -ms-word-break: break-all; word-break: break-all; border-radius: 5px; box-sizing: border-box; cursor: pointer; display: inline-block; font-size: 14px; font-weight: bold; text-transform: capitalize; background: #35C786; margin: 0; padding: 12px 30px; border: 1px solid #35c786;'>
-                                                                                    Daveti Kabul Etmek İçin Bu Bağlantıya Tıklayın
+                                                                                    Daveti kabul etmek için bu bağlantıya tıklayın
                                                                                 </a>
                                                                             </td>
                                                                         </tr>
@@ -348,8 +370,20 @@
   </area>
   <area alias="validation">
     <key alias="invalidEmail">Geçersiz e-posta</key>
-    <key alias="entriesShort"><![CDATA[Minimum %0% giriş, <strong>%1% </strong> daha fazla gerektirir.]]></key>
-    <key alias="entriesExceed"><![CDATA[Maksimum %0% giriş, <strong>%1% </strong> çok fazla.]]></key>
+    <key alias="invalidNull">Değer boş olamaz</key>
+    <key alias="invalidEmpty">Değer boş bırakılamaz</key>
+    <key alias="invalidPattern">Değer geçersiz, doğru formatla uyuşmuyor</key>
+    <key alias="invalidMemberGroupName">Geçersiz üye grubu adı</key>
+    <key alias="invalidUserGroupName">Geçersiz kullanıcı grubu adı</key>
+    <key alias="invalidToken">Geçersiz simge</key>
+    <key alias="invalidUsername">Geçersiz kullanıcı adı</key>
+    <key alias="duplicateEmail">'%0%' e-posta adresi zaten kullanımda</key>
+    <key alias="duplicateUserGroupName">'%0%' kullanıcı grubu adı zaten kullanımda</key>
+    <key alias="duplicateMemberGroupName">'%0%' üye grubu adı zaten kullanımda</key>
+    <key alias="duplicateUsername">'%0%' kullanıcı adı zaten kullanımda</key>
+    <key alias="entriesShort"><![CDATA[Minimum %0% giriş, <strong>%1%</strong> daha fazla olması gerekli.]]></key>
+    <key alias="entriesExceed"><![CDATA[Maksimum %0% giriş, <strong>%1%</strong> daha az olması gerekli.]]></key>
+    <key alias="entriesAreasMismatch">İçerik miktarı gereksinimleri bir veya daha fazla alan için karşılanmadı.</key>
   </area>
   <area alias="healthcheck">
     <!-- The following keys get these tokens passed in:
@@ -371,15 +405,23 @@
 		   2: Server version
 	  -->
     <!-- The following keys get predefined tokens passed in that are not all the same, like above -->
-    <key alias="httpsCheckValidCertificate">Web sitenizin sertifikası geçerlidir.</key>
+    <key alias="httpsCheckValidCertificate">Web sitenizin sertifikası geçerli.</key>
     <key alias="httpsCheckInvalidCertificate">Sertifika doğrulama hatası: '%0%'</key>
     <key alias="httpsCheckExpiredCertificate">Web sitenizin SSL sertifikasının süresi doldu.</key>
     <key alias="httpsCheckExpiringCertificate">Web sitenizin SSL sertifikasının süresi %0% gün içinde doluyor.</key>
     <key alias="healthCheckInvalidUrl">URL %0% - '%1%' pinglenirken hata oluştu</key>
-    <key alias="httpsCheckIsCurrentSchemeHttps">Şu anda HTTPS şemasını kullanarak siteyi %0% görüntülüyorsunuz.</key>
+    <!--For the following key, either the word 'not' or an empty string is returned as the value for the placeholder, so I am placing it in front of the word HTTPS.-->
+    <key alias="httpsCheckIsCurrentSchemeHttps">Şu anda %0% HTTPS şemasını kullanarak siteyi görüntülüyorsunuz.</key>
+    <key alias="httpsCheckConfigurationRectifyNotPossible">'Umbraco:CMS:Global:UseHttps' adlı uygulama ayarı appSettings.json dosyasında 'false' değerine sahip. Bu siteye HTTPS şemasıyla eriştiğinizde, 'true' değerine ayarlanmalı.
+    </key>
+    <!--For the following key, either the word 'not' or an empty string is returned as the value for the placeholder, so I am leaving the word "secure" as is.-->
+    <key alias="httpsCheckConfigurationCheckResult">'Umbraco:CMS:Global:UseHttps' adlı uygulama ayarı appSettings.json dosyasında '%0%' değerine sahip, çerezleriniz %1% secure olarak işaretli.
+    </key>
     <!-- The following keys don't get tokens passed in -->
     <key alias="compilationDebugCheckSuccessMessage">Hata ayıklama derleme modu devre dışı.</key>
     <key alias="compilationDebugCheckErrorMessage">Hata ayıklama derleme modu şu anda etkin. Yayınlanmadan önce bu ayarı devre dışı bırakmanız önerilir.</key>
+    <key alias="runtimeModeCheckSuccessMessage">Çalıştırma modu üretime ayarlı.</key>
+    <key alias="runtimeModeCheckErrorMessage">Çalıştırma modu üretime ayarlı değil. Canlı ortamlar veya üretim ortamları için çalıştırma modunu üretime ayarlamanız önerilir.</key>
     <!-- The following keys get these tokens passed in:
 	    0: Comma delimitted list of failed folder paths
   	-->
@@ -389,24 +431,68 @@
     <!-- The following key get these tokens passed in:
 	    0: Comma delimitted list of headers found
   	-->
-    <key alias="clickJackingCheckHeaderFound">​​<![CDATA[Bir sitenin başka bir site tarafından IFRAMEd olup olmadığını kontrol etmek için kullanılan başlık veya meta etiketi <strong> X-Frame-Options </strong>.]]></key>
-    <key alias="clickJackingCheckHeaderNotFound"><![CDATA[Bir sitenin başka bir site tarafından IFRAMEd olup olmadığını kontrol etmek için kullanılan başlık veya meta etiketi <strong> X-Frame-Options </strong> bulunamadı.]]></key>
-    <key alias="noSniffCheckHeaderFound">​​<![CDATA[MIME koklama güvenlik açıklarına karşı koruma sağlamak için kullanılan başlık veya meta etiketi <strong> X-Content-Type-Options </strong> bulundu.]]></key>
-    <key alias="noSniffCheckHeaderNotFound">​​<![CDATA[MIME koklama güvenlik açıklarına karşı koruma sağlamak için kullanılan başlık veya meta etiketi <strong> X-Content-Type-Options </strong> bulunamadı.]]></key>
-    <key alias="hSTSCheckHeaderFound">​​<![CDATA[HSTS başlığı olarak da bilinen <strong> Strict-Transport-Security </strong> başlığı bulundu.]]></key>
-    <key alias="hSTSCheckHeaderNotFound">​​<![CDATA[<strong> Strict-Transport-Security </strong> başlığı bulunamadı.]]></key>
-    <key alias="xssProtectionCheckHeaderFound">​​<![CDATA[<strong> X-XSS-Protection </strong> başlığı bulundu.]]></key>
-    <key alias="xssProtectionCheckHeaderNotFound">​​<![CDATA[<strong> X-XSS-Protection </strong> başlığı bulunamadı.]]></key>
-    <key alias="excessiveHeadersFound">​​<![CDATA[Web sitesi teknolojisi hakkında bilgi veren şu başlıklar bulundu: <strong>%0%</strong>.]]></key>
-    <key alias="excessiveHeadersNotFound">​​Web sitesi teknolojisi hakkında bilgi veren hiçbir başlık bulunamadı.</key>
+    <key alias="umbracoApplicationUrlCheckResultTrue"><![CDATA['Umbraco:CMS:WebRouting:UmbracoApplicationUrl' adlı uygulama ayarı <strong>%0%</strong> değerine sahip.]]></key>
+    <key alias="umbracoApplicationUrlCheckResultFalse">'Umbraco:CMS:WebRouting:UmbracoApplicationUrl' adlı uygulama ayarının değeri bulunmuyor.</key>
+    <key alias="clickJackingCheckHeaderFound">​​<![CDATA[Bir sitenin başka bir site tarafından IFRAMEd olup olmadığını kontrol etmek için kullanılan başlık veya meta etiketi <strong>X-Frame-Options</strong> bulundu.]]></key>
+    <key alias="clickJackingCheckHeaderNotFound"><![CDATA[Bir sitenin başka bir site tarafından IFRAMEd olup olmadığını kontrol etmek için kullanılan başlık veya meta etiketi <strong>X-Frame-Options</strong> bulunamadı.]]></key>
+    <key alias="noSniffCheckHeaderFound">​​<![CDATA[MIME koklama güvenlik açıklarına karşı koruma sağlamak için kullanılan başlık veya meta etiketi <strong>X-Content-Type-Options</strong> bulundu.]]></key>
+    <key alias="noSniffCheckHeaderNotFound">​​<![CDATA[MIME koklama güvenlik açıklarına karşı koruma sağlamak için kullanılan başlık veya meta etiketi <strong>X-Content-Type-Options</strong> bulunamadı.]]></key>
+    <key alias="hSTSCheckHeaderFound">​​<![CDATA[HSTS başlığı olarak da bilinen <strong>Strict-Transport-Security</strong> başlığı bulundu.]]></key>
+    <key alias="hSTSCheckHeaderNotFound">​​<![CDATA[<strong>Strict-Transport-Security</strong> başlığı bulunamadı.]]></key>
+    <key alias="hSTSCheckHeaderFoundOnLocalhost">
+      <![CDATA[HSTS başlığı olarak da bilinen <strong>Strict-Transport-Security</strong> başlığı bulundu. <strong>Bu başlık yerel bilgisayar için bulunmamalıdır.</strong>]]>
+    </key>
+    <key alias="hSTSCheckHeaderNotFoundOnLocalhost">
+      <![CDATA[<strong>Strict-Transport-Security</strong> başlığı bulunamadı. Bu başlık yerel bilgisayar için bulunmamalıdır.]]>
+    </key>
+    <key alias="xssProtectionCheckHeaderFound">​​
+      <![CDATA[<strong>X-XSS-Protection</strong> başlığı bulundu. <strong>Web sitenize bu başlığı eklememeniz önerilir</strong>.<br />
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection" target="_blank" rel="noopener" class="btn-link -underline">Mozilla</a> web sitesinde bu konuyla ilgili daha fazla bilgiye ulaşabilirsiniz ]]></key>
+    <key alias="xssProtectionCheckHeaderNotFound">​​<![CDATA[<strong>X-XSS-Protection</strong> başlığı bulunamadı.]]></key>
+    <key alias="contentSecurityPolicyCheckHeaderFound">
+      <![CDATA[<strong>Content-Security-Policy (CSP)</strong> başlığı bulundu. ]]>
+    </key>
+    <key alias="contentSecurityPolicyCheckHeaderNotFound">
+      <![CDATA[Siteler arası betik çalıştırma (XSS) saldırılarına ve diğer kod enjeksiyonu güvenlik açıklarına karşı koruma sağlamak için kullanılan <strong>Content-Security-Policy</strong> (CSP) başlığı bulunamadı.]]>
+    </key>
+    <key alias="excessiveHeadersFound">​​<![CDATA[Web sitesi teknolojisi hakkında bilgi açığa çıkaran şu başlıklar bulundu: <strong>%0%</strong>.]]></key>
+    <key alias="excessiveHeadersNotFound">​​Web sitesi teknolojisi hakkında bilgi açığa çıkaran hiçbir başlık bulunamadı.</key>
+    <key alias="smtpMailSettingsNotFound">'Umbraco:CMS:Global:Smtp' adlı yapılandırma ayarı bulunamadı.</key>
+    <key alias="smtpMailSettingsHostNotConfigured">'Umbraco:CMS:Global:Smtp:Host' adlı yapılandırma ayarı bulunamadı.</key>
     <key alias="smtpMailSettingsConnectionSuccess">SMTP ayarları doğru yapılandırıldı ve hizmet beklendiği gibi çalışıyor.</key>
+    <key alias="smtpMailSettingsConnectionFail">
+      '%0%' sunucusu ve '%1%' bağlantı noktası ile yapılandırılan SMTP sunucusuna ulaşım sağlanamadı. Lütfen 'Umbraco:CMS:Global:Smtp' yapılandırmasında bulunan SMTP ayarlarının doğruluğunu kontrol edin.
+    </key>
     <key alias="notificationEmailsCheckSuccessMessage"><![CDATA[Bildirim e-postası <strong>%0%</strong> olarak ayarlandı]]></key>
-    <key alias="notificationEmailsCheckErrorMessage"><![CDATA[Bildirim e-postası hâlâ varsayılan değer olan <strong>%0%</strong>.]]></key>
-    <key alias="scheduledHealthCheckEmailBody"><![CDATA[<html><body><p>%0% tarihinde %1% ile çalıştırılan planlanmış Umbraco Sağlık Kontrollerinin sonuçları aşağıdaki gibidir: </p>%2%</body></html>]]></key>
+    <key alias="notificationEmailsCheckErrorMessage"><![CDATA[Bildirim e-postası hâlâ varsayılan değer olan <strong>%0%</strong> olarak ayarlı.]]></key>
+    <key alias="scheduledHealthCheckEmailBody"><![CDATA[<html><body><p>%0% tarihinde %1% saatinde çalıştırılan planlanmış Umbraco Sağlık Kontrollerinin sonuçları aşağıdaki gibidir: </p>%2%</body></html>]]></key>
     <key alias="scheduledHealthCheckEmailSubject">Umbraco Sağlık Kontrolü Durumu: %0%</key>
   </area>
   <area alias="recycleBin">
-    <key alias="contentTrashed">Çöp kutusuna gönderilmiş içerik: {0} Şu kimliğe sahip orijinal ana içerikle ilgili: {1}</key>
-    <key alias="mediaTrashed">Şu kimliğe sahip çöp kutusuna gönderilen medya: {0} Şu kimliğe sahip orijinal ana medya öğesiyle ilgili: {1}</key>
+    <key alias="contentTrashed">Çöp kutusuna gönderilen içerik kimliği: {0}. Şu kimliğe sahip orijinal ana içerikle ilgili: {1}</key>
+    <key alias="mediaTrashed">Çöp kutusuna gönderilen medya kimliği: {0}. Şu kimliğe sahip orijinal ana medya öğesiyle ilgili: {1}</key>
+  </area>
+  <area alias="permissions">
+    <key alias="FolderCreation">Klasör oluşturma</key>
+    <key alias="FileWritingForPackages">Paket dosyasına yazma</key>
+    <key alias="FileWriting">Dosyaya yazma</key>
+    <key alias="MediaFolderCreation">Medya klasörü oluşturma</key>
+  </area>
+  <area alias="analytics">
+    <key alias="minimalLevelDescription">Yalnızca sitenin varlığından haberdar olmamızı sağlayan, anonimleştirilmiş site kimliğini göndereceğiz.</key>
+    <key alias="basicLevelDescription">Anonimleştirilmiş site kimliğini, Umbraco versiyonunu ve kurulu paketleri göndereceğiz.</key>
+    <key alias="detailedLevelDescription">
+      <![CDATA[
+          Göndereceklerimiz aşağıdaki gibidir:
+          <ul>
+            <li>Anonimleştirilmiş site kimliği, Umbraco versiyonu ve kurulu paketler.</li>
+            <li>Şu öğelerin sayıları: kök düğümleri, içerik düğümleri, makrolar, medya öğeleri, belge türleri, özellik türleri, bileşimler, şablonlar, diller, alan adları, kullanıcı grupları, kullanıcılar, üyeler, harici arka ofis oturum açma sağlayıcıları, web kancaları, zengin metin veri türleri, zengin metin veri türlerinde kullanılan bloklar ve kullanımda olan özellik editörleri.</li>
+            <li>Sistem bilgileri: Web sunucusu, sunucu işletim sistemi, sunucu yazılımı çerçevesi, sunucu işletim sistemi dili ve veritabanı sağlayıcısı.</li>
+            <li>Yapılandırma ayarları: Modelsbuilder modu, Umbraco dosya yolunun özelleştirilmiş olup olmadığı, ASP ortamı, teslimat uygulama programlama arayüzünün (Delivery API) etkin olup olmadığı ve kamu erişimine açık olup olmadığı, hata ayıklama modunun etkin olup olmadığı.</li>
+          </ul>
+          <em>Detaylı seviyede gönderdiğimiz bilgiler gelecekte değişebilir. Değişim söz konusu olursa, yukarıdaki listede belirtilecektir.
+          <br>"Detaylı" seçeneğini seçerek şu anki ve gelecekteki anonimleştirilmiş bilgilerin toplanmasını kabul etmiş olursunuz.</em>
+       ]]>
+    </key>
   </area>
 </language>
