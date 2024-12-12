@@ -474,7 +474,7 @@
   </area>
   <area alias="permissions">
     <key alias="FolderCreation">Klasör oluşturma</key>
-    <key alias="FileWritingForPackages">Paket dosyasına yazma</key>
+    <key alias="FileWritingForPackages">Paketler için dosyaya yazma</key>
     <key alias="FileWriting">Dosyaya yazma</key>
     <key alias="MediaFolderCreation">Medya klasörü oluşturma</key>
   </area>
@@ -486,11 +486,11 @@
           Göndereceklerimiz aşağıdaki gibidir:
           <ul>
             <li>Anonimleştirilmiş site kimliği, Umbraco versiyonu ve kurulu paketler.</li>
-            <li>Şu öğelerin sayıları: kök düğümleri, içerik düğümleri, makrolar, medya öğeleri, belge türleri, özellik türleri, bileşimler, şablonlar, diller, alan adları, kullanıcı grupları, kullanıcılar, üyeler, harici arka ofis oturum açma sağlayıcıları, web kancaları, zengin metin veri türleri, zengin metin veri türlerinde kullanılan bloklar ve kullanımda olan özellik editörleri.</li>
+            <li>Belirtilen öğelerin sayıları: kök düğümleri, içerik düğümleri, makrolar, medya öğeleri, belge türleri, özellik türleri, bileşimler, şablonlar, diller, alan adları, kullanıcı grupları, kullanıcılar, üyeler, harici arka ofis oturum açma sağlayıcıları, web kancaları, zengin metin veri türleri, zengin metin veri türlerinde kullanılan bloklar ve kullanımda olan özellik editörleri.</li>
             <li>Sistem bilgileri: Web sunucusu, sunucu işletim sistemi, sunucu yazılımı çerçevesi, sunucu işletim sistemi dili ve veritabanı sağlayıcısı.</li>
             <li>Yapılandırma ayarları: Modelsbuilder modu, Umbraco dosya yolunun özelleştirilmiş olup olmadığı, ASP ortamı, teslimat uygulama programlama arayüzünün (Delivery API) etkin olup olmadığı ve kamu erişimine açık olup olmadığı, hata ayıklama modunun etkin olup olmadığı.</li>
           </ul>
-          <em>Detaylı seviyede gönderdiğimiz bilgiler gelecekte değişebilir. Değişim söz konusu olursa, yukarıdaki listede belirtilecektir.
+          <em>Detaylı seviyesinde gönderdiğimiz bilgiler gelecekte değişebilir. Değişim söz konusu olursa, yukarıdaki listede belirtilecektir.
           <br>"Detaylı" seçeneğini seçerek şu anki ve gelecekteki anonimleştirilmiş bilgilerin toplanmasını kabul etmiş olursunuz.</em>
        ]]>
     </key>
