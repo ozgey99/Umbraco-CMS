@@ -105,7 +105,8 @@ export default {
 	},
 	assignDomain: {
 		permissionDenied: 'İzin reddedildi.',
-		addNew: 'Yeni Alan Adı Ekle',
+		addNew: 'Yeni alan ekle',
+		addCurrent: 'Şu anki alanı ekle',
 		remove: 'kaldır',
 		invalidNode: 'Geçersiz düğüm.',
 		invalidDomain: 'Bir veya daha fazla alanın biçimi geçersiz.',
@@ -113,7 +114,7 @@ export default {
 		language: 'Dil',
 		domain: 'Alan',
 		domainCreated: "Yeni '%0%' etki alanı oluşturuldu",
-		domainDeleted: "'%0%' alan adı silindi",
+		domainDeleted: "'%0%' etki alanı silindi",
 		domainExists: "'%0%' etki alanı zaten atanmış",
 		domainUpdated: "'%0%' etki alanı güncellendi",
 		orEdit: 'Mevcut Etki Alanlarını Düzenle',
@@ -122,7 +123,7 @@ export default {
 		inherit: 'Devral',
 		setLanguage: 'Kültür',
 		setLanguageHelp:
-			'Geçerli düğümün altındaki düğümler için kültürü ayarlayın, <br /> veya kültürü üst düğümlerden devralın. Ayrıca <br />\n        aşağıdaki alan da geçerli değilse geçerli düğüme.',
+			'Geçerli düğümün altındaki düğümler için kültürü ayarlayın, <br /> veya kültürü üst düğümlerden devralın. Ayrıca <br />\n        aşağıdaki alanlardan herhangi biri şu anki düğüm için geçerli değilse şu anki düğüme de uygulanacaktır.',
 		setDomains: 'Alanlar',
 	},
 	buttons: {
