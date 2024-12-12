@@ -488,7 +488,7 @@
             <li>Anonimleştirilmiş site kimliği, Umbraco versiyonu ve kurulu paketler.</li>
             <li>Belirtilen öğelerin sayıları: kök düğümleri, içerik düğümleri, makrolar, medya öğeleri, belge türleri, özellik türleri, kompozisyonlar, şablonlar, diller, alan adları, kullanıcı grupları, kullanıcılar, üyeler, harici arka ofis oturum açma sağlayıcıları, web kancaları, zengin metin veri türleri, zengin metin veri türlerinde kullanılan bloklar ve kullanımda olan özellik editörleri.</li>
             <li>Sistem bilgileri: Web sunucusu, sunucu işletim sistemi, sunucu yazılımı çerçevesi, sunucu işletim sistemi dili ve veritabanı sağlayıcısı.</li>
-            <li>Yapılandırma ayarları: Modelsbuilder modu, Umbraco dosya yolunun özelleştirilmiş olup olmadığı, ASP ortamı, teslimat uygulama programlama arayüzünün (Delivery API) etkin olup olmadığı ve kamu erişimine açık olup olmadığı, hata ayıklama modunun etkin olup olmadığı.</li>
+            <li>Yapılandırma ayarları: Modelsbuilder modu, Umbraco dosya yolunun özelleştirilmiş olup olmadığı, ASP ortamı, teslimat uygulama programlama arayüzünün (Delivery API) etkin olup olmadığı ve genel erişimine açık olup olmadığı, hata ayıklama modunun etkin olup olmadığı.</li>
           </ul>
           <em>Detaylı seviyesinde gönderdiğimiz bilgiler gelecekte değişebilir. Değişim söz konusu olursa, yukarıdaki listede belirtilecektir.
           <br>"Detaylı" seçeneğini seçerek şu anki ve gelecekteki anonimleştirilmiş bilgilerin toplanmasını kabul etmiş olursunuz.</em>
