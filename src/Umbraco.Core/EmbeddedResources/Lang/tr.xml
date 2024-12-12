@@ -381,8 +381,8 @@
     <key alias="duplicateUserGroupName">'%0%' kullanıcı grubu adı zaten kullanımda</key>
     <key alias="duplicateMemberGroupName">'%0%' üye grubu adı zaten kullanımda</key>
     <key alias="duplicateUsername">'%0%' kullanıcı adı zaten kullanımda</key>
-    <key alias="entriesShort"><![CDATA[Minimum %0% giriş, <strong>%1%</strong> daha fazla olması gerekli.]]></key>
-    <key alias="entriesExceed"><![CDATA[Maksimum %0% giriş, <strong>%1%</strong> daha az olması gerekli.]]></key>
+    <key alias="entriesShort"><![CDATA[Minimum %0% giriş, <strong>%1%</strong> adet daha fazla olması gerekli.]]></key>
+    <key alias="entriesExceed"><![CDATA[Maksimum %0% giriş, <strong>%1%</strong> adet daha az olması gerekli.]]></key>
     <key alias="entriesAreasMismatch">İçerik miktarı gereksinimleri bir veya daha fazla alan için karşılanmadı.</key>
   </area>
   <area alias="healthcheck">
