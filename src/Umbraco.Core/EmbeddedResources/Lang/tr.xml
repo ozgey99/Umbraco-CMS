@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <language alias="tr" intName="Turkish" localName="Türkçe" lcid="" culture="tr-TR">
   <creator>
     <name>The Umbraco community</name>
@@ -27,7 +27,7 @@
     <key alias="move">Taşı</key>
     <key alias="notify">Bildirimler</key>
     <key alias="protect">Genel erişim</key>
-    <key alias="publish">Yayımla</key>
+    <key alias="publish">Yayınla</key>
     <key alias="unpublish">Yayından Kaldır</key>
     <key alias="refreshNode">Yeniden Yükle</key>
     <key alias="republish">Tüm siteyi yeniden yayınla</key>
@@ -35,7 +35,7 @@
     <key alias="rename" version="7.3.0">Yeniden adlandır</key>
     <key alias="restore" version="7.3.0">Geri Yükle</key>
     <key alias="chooseWhereToCopy">Nereye kopyalayacağınızı seçin</key>
-    <key alias="chooseWhereToMove">Taşınacağınız yeri seçin</key>
+    <key alias="chooseWhereToMove">Taşıyacağınız yeri seçin</key>
     <key alias="toInTheTreeStructureBelow">aşağıdaki ağaç yapısına</key>
     <key alias="infiniteEditorChooseWhereToCopy">Seçili öğelerin nereye kopyalanacağını seçin</key>
     <key alias="infiniteEditorChooseWhereToMove">Seçili öğelerin nereye taşınacağını seçin</key>
@@ -44,7 +44,7 @@
     <key alias="wasDeleted">silindi,</key>
     <key alias="rights">İzinler</key>
     <key alias="rollback">Geri al</key>
-    <key alias="sendtopublish">Yayınlamak İçin Gönder</key>
+    <key alias="sendtopublish">Yayınlamaya Gönder</key>
     <key alias="sendToTranslate">Çeviriye Gönder</key>
     <key alias="setGroup">Grup ayarla</key>
     <key alias="sort">Sırala</key>
@@ -119,7 +119,7 @@
 																	<tr>
 																		<td style='font-family: sans-serif; font-size: 14px; vertical-align: top; border-radius: 5px; text-align: center; background: #35C786;' align='center' bgcolor='#35C786' valign='top'>
 																			<a href='%1%' target='_blank' rel='noopener' style='color: #FFFFFF; text-decoration: none; -ms-word-break: break-all; word-break: break-all; border-radius: 5px; box-sizing: border-box; cursor: pointer; display: inline-block; font-size: 14px; font-weight: bold; text-transform: capitalize; background: #35C786; margin: 0; padding: 12px 30px; border: 1px solid #35c786;'>
-																				Şifrenizi yenilemek için bu bağlantıyı tıklayın
+																				Şifrenizi yenilemek için bu bağlantıya tıklayın
 																			</a>
 																		</td>
 																	</tr>
@@ -310,7 +310,7 @@
                                                                         <tr>
                                                                             <td style='font-family: sans-serif; font-size: 14px; vertical-align: top; border-radius: 5px; text-align: center; background: #35C786;' align='center' bgcolor='#35C786' valign='top'>
                                                                                 <a href='%3%' target='_blank' rel='noopener' style='color: #FFFFFF; text-decoration: none; -ms-word-break: break-all; word-break: break-all; border-radius: 5px; box-sizing: border-box; cursor: pointer; display: inline-block; font-size: 14px; font-weight: bold; text-transform: capitalize; background: #35C786; margin: 0; padding: 12px 30px; border: 1px solid #35c786;'>
-                                                                                    Daveti Kabul Etmek İçin Bu Bağlantıyı Tıklayın
+                                                                                    Daveti Kabul Etmek İçin Bu Bağlantıya Tıklayın
                                                                                 </a>
                                                                             </td>
                                                                         </tr>
