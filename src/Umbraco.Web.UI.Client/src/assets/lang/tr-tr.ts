@@ -348,14 +348,16 @@ export default {
 		saveModalTitle: 'Kaydet',
 	},
 	blueprints: {
-		createBlueprintFrom: '<em>%0%</em> den yeni bir İçerik Şablonu oluşturun',
+		createBlueprintFrom: '%0% üzerinden yeni bir Belge Şablonu oluştur',
+		createBlueprintItemUnder: "'%0%' altında yeni bir öğe oluştur",
+		createBlueprintFolderUnder: "'%0%' altında yeni bir klasör oluştur",
 		blankBlueprint: 'Boş',
-		selectBlueprint: 'Bir İçerik Şablonu Seçin',
-		createdBlueprintHeading: 'İçerik Şablonu oluşturuldu',
-		createdBlueprintMessage: "'%0%' üzerinden bir İçerik Şablonu oluşturuldu",
-		duplicateBlueprintMessage: 'Aynı ada sahip başka bir İçerik Şablonu zaten var',
+		selectBlueprint: 'Bir Belge Şablonu Seçin',
+		createdBlueprintHeading: 'Belge Şablonu oluşturuldu',
+		createdBlueprintMessage: "'%0%' üzerinden bir Belge Şablonu oluşturuldu",
+		duplicateBlueprintMessage: 'Aynı ada sahip başka bir Belge Şablonu zaten var',
 		blueprintDescription:
-			'İçerik Şablonu, bir düzenleyicinin yeni içerik oluşturmak için temel olarak kullanmak üzere seçebileceği önceden tanımlanmış içeriktir',
+			'Belge Şablonu, bir düzenleyicinin yeni içerik oluşturmak için temel almak üzere seçebileceği, önceden tanımlanmış içeriktir',
 	},
 	media: {
 		clickToUpload: 'Yüklemek için tıklayın',
