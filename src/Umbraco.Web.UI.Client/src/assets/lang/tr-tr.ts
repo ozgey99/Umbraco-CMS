@@ -219,6 +219,9 @@ export default {
 		createFolderIllegalChars: 'Klasör adı geçersiz karakterler içeremez.',
 		deleteItemFailed: 'Öğe silinemedi: %0%',
 	},
+	collection: {
+		noItemsTitle: 'Öğe yok',
+	},
 	content: {
 		isPublished: 'Yayınlandı',
 		about: 'Bu sayfa hakkında',
