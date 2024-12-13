@@ -359,6 +359,16 @@ export default {
 		blueprintDescription:
 			'Belge Şablonu, bir düzenleyicinin yeni içerik oluşturmak için temel almak üzere seçebileceği, önceden tanımlanmış içeriktir',
 	},
+	entityDetail: {
+		notFoundTitle: (entityType: string) => {
+			const entityName = entityType ?? 'Öğe';
+			return `${entityName} bulunamadı`;
+		},
+		notFoundDescription: (entityType: string) => {
+			const entityName = entityType ?? 'öğe';
+			return `İstenen ${entityName} bulunamadı. Lütfen URL'yi kontrol edip yeniden deneyin.`;
+		},
+	},
 	media: {
 		clickToUpload: 'Yüklemek için tıklayın',
 		orClickHereToUpload: 'veya dosyaları seçmek için burayı tıklayın',
